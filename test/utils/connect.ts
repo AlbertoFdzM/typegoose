@@ -8,13 +8,10 @@ interface ExtraConnectionConfig {
 }
 
 // to not duplicate code
-const staticOptions = {
-  useNewUrlParser: true,
+const staticOptions: mongoose.ConnectionOptions = {
   useFindAndModify: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true,
   autoIndex: true,
-} as mongoose.ConnectionOptions;
+};
 
 /**
  * Make a Connection to MongoDB
