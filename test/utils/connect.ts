@@ -9,7 +9,8 @@ interface ExtraConnectionConfig {
 
 // to not duplicate code
 const staticOptions: mongoose.ConnectionOptions = {
-  useFindAndModify: true,
+  // TODO: remove when https://github.com/Automattic/mongoose/issues/10518 is resolved
+  //useFindAndModify: true,
   autoIndex: true,
 };
 
